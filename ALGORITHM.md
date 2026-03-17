@@ -234,7 +234,7 @@ the current k-mer window.
 > k=4) are skipped (`sketch.c:L108`).  For very small *k*, a non-trivial
 > fraction of k-mers may be palindromic, reducing sensitivity.
 >
-> **Impact:** Rare in practice for k≥15, but important to keep in mind for
+> **Impact:** Rare in practice for k ≥ 15, but important to keep in mind for
 > custom short-k applications.
 
 > ⚠️ **Pitfall 3 — Window size *w* trades sensitivity for speed.**
@@ -792,7 +792,7 @@ the lower-scoring chain becomes a secondary alignment of the higher-scoring one.
 | Term | Definition |
 |------|-----------|
 | **k-mer** | A subsequence of length *k* from a nucleotide sequence |
-| **Minimizer** | The k-mer with the smallest hash value within a sliding window of *w* consecutive k-mers |
+| **Minimizer** | The k-mer with the smallest hash value within a window of *w* k-mers |
 | **Sketch** | The set of all minimizers extracted from a sequence |
 | **Seed / Anchor** | A position pair (query, reference) where the same minimizer occurs in both sequences |
 | **Chain** | An ordered set of collinear seeds that together represent a candidate alignment |
